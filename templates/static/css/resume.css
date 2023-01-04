@@ -1,0 +1,133 @@
+@font-face {
+  font-family: start-2p;
+  src: url(/templates/static/fonts/PressStart2P-vaV7.ttf);
+  /* font-family: super-legend-boy;
+  src: url(/templates/static/fonts/super-legend-boy.woff);
+  src: url(/templates/static/fonts/super-legend-boy.eot);
+  src: url(/templates/static/fonts/super-legend-boy.ttf); */
+}
+html {
+  background: rgb(0,3,36);
+  background: linear-gradient(0deg, rgba(2, 10, 94, 0.866) 0%, rgba(25,25,142,1) 5%, rgba(231, 244, 247, 0.89) 100%);}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 200px;
+  margin: 5px auto;
+  display: block;
+  border-radius: 50%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  padding-right: 15px;
+}
+
+li:last-child {
+  padding-right: 0;
+}
+
+#welcome-section {
+  width: 100%;
+  margin-top: 65px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+#insert {
+  display: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 50px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  z-index: 1;
+
+}
+
+.nav-link {
+  transform: translate(100px);
+  text-align: center;
+  padding: 5px 20px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+  border: 1px solid #487cdd;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  margin: 5px 0;
+}
+
+.nav-link:hover {
+  background: #f7fafde8;
+  box-shadow: 0 0 15px #48a1ddb9;
+  transition: .2s;
+}
+
+.for_game {
+  font-family: start-2p;
+}
+
+.main_section {
+  border: 1px solid red;
+  margin: 25px auto;
+  height: 800px;
+  padding: 100px;
+}
+
+.main_info {
+  border-radius: 10px;
+  padding: 20px;
+  height: 500px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+  border: 1px solid green;
+}
+
+.yes-wrap {
+  word-break: break-word;
+}
+
+.hidden {
+  position: absolute;
+  display: none;
+  /* visibility: hidden; */
+}
+
+.main {
+  position: absolute;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+
+  #welcome-section {
+    border: solid 2px green;
+  }
+
+  #navbar {
+    width: 100%;
+  }
+
+  .container {
+    margin: 0;
+  }
+}
